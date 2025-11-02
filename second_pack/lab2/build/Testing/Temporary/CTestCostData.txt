@@ -1,0 +1,27 @@
+MemTest.MemchrFound 7 0.00219881
+MemTest.MemchrNotFound 7 0.00250517
+MemTest.MemcmpEqual 7 0.00265721
+MemTest.MemcmpDiff 6 0.00301538
+MemTest.MemcpyBasic 6 0.00289767
+MemTest.MemsetBasic 7 0.00292451
+StrTest.StrncatBasic 7 0.00277557
+StrTest.StrchrBasic 7 0.00301287
+StrTest.StrchrNotFound 7 0.00283894
+StrTest.StrncmpEqual 7 0.00257643
+StrTest.StrncmpDiff 7 0.00293804
+StrTest.StrncpyBasic 7 0.0031487
+StrTest.StrcspnBasic 7 0.00284137
+StrTest.StrcspnNoMatch 7 0.00286154
+StrTest.StrerrorCommon 7 0.00286707
+StrTest.StrerrorOutOfRange 7 0.00330357
+StrTest.StrlenBasic 7 0.00276714
+StrTest.StrlenEmpty 7 0.00268603
+StrTest.StrpbrkBasic 7 0.00302676
+StrTest.StrpbrkNotFound 7 0.00280864
+StrTest.StrrchrBasic 7 0.00293131
+StrTest.StrrchrNotFound 7 0.00306726
+StrTest.StrstrBasic 7 0.0032182
+StrTest.StrstrNotFound 7 0.00326706
+StrTest.StrtokBasic 7 0.00329204
+StatusTest.StatusMessages 7 0.00311013
+---

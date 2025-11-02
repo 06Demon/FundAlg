@@ -1,0 +1,679 @@
+Start testing: Oct 24 19:16 RTZ 2 (çèìà)
+----------------------------------------------------------
+1/26 Testing: MemTest.MemchrFound
+1/26 Test: MemTest.MemchrFound
+Command: "C:/Lobovikov/Programming/labs/fundalg/lab2/build/tests.exe" "--gtest_filter=MemTest.MemchrFound" "--gtest_also_run_disabled_tests"
+Directory: C:/Lobovikov/Programming/labs/fundalg/lab2/build
+"MemTest.MemchrFound" start time: Oct 24 19:16 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Note: Google Test filter = MemTest.MemchrFound
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from MemTest
+[ RUN      ] MemTest.MemchrFound
+[       OK ] MemTest.MemchrFound (0 ms)
+[----------] 1 test from MemTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"MemTest.MemchrFound" end time: Oct 24 19:16 RTZ 2 (çèìà)
+"MemTest.MemchrFound" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/26 Testing: MemTest.MemchrNotFound
+2/26 Test: MemTest.MemchrNotFound
+Command: "C:/Lobovikov/Programming/labs/fundalg/lab2/build/tests.exe" "--gtest_filter=MemTest.MemchrNotFound" "--gtest_also_run_disabled_tests"
+Directory: C:/Lobovikov/Programming/labs/fundalg/lab2/build
+"MemTest.MemchrNotFound" start time: Oct 24 19:16 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Note: Google Test filter = MemTest.MemchrNotFound
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from MemTest
+[ RUN      ] MemTest.MemchrNotFound
+[       OK ] MemTest.MemchrNotFound (0 ms)
+[----------] 1 test from MemTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"MemTest.MemchrNotFound" end time: Oct 24 19:16 RTZ 2 (çèìà)
+"MemTest.MemchrNotFound" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/26 Testing: MemTest.MemcmpEqual
+3/26 Test: MemTest.MemcmpEqual
+Command: "C:/Lobovikov/Programming/labs/fundalg/lab2/build/tests.exe" "--gtest_filter=MemTest.MemcmpEqual" "--gtest_also_run_disabled_tests"
+Directory: C:/Lobovikov/Programming/labs/fundalg/lab2/build
+"MemTest.MemcmpEqual" start time: Oct 24 19:16 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Note: Google Test filter = MemTest.MemcmpEqual
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from MemTest
+[ RUN      ] MemTest.MemcmpEqual
+[       OK ] MemTest.MemcmpEqual (0 ms)
+[----------] 1 test from MemTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"MemTest.MemcmpEqual" end time: Oct 24 19:16 RTZ 2 (çèìà)
+"MemTest.MemcmpEqual" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/26 Testing: MemTest.MemcmpDiff
+4/26 Test: MemTest.MemcmpDiff
+Command: "C:/Lobovikov/Programming/labs/fundalg/lab2/build/tests.exe" "--gtest_filter=MemTest.MemcmpDiff" "--gtest_also_run_disabled_tests"
+Directory: C:/Lobovikov/Programming/labs/fundalg/lab2/build
+"MemTest.MemcmpDiff" start time: Oct 24 19:16 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Note: Google Test filter = MemTest.MemcmpDiff
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from MemTest
+[ RUN      ] MemTest.MemcmpDiff
+[       OK ] MemTest.MemcmpDiff (0 ms)
+[----------] 1 test from MemTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"MemTest.MemcmpDiff" end time: Oct 24 19:16 RTZ 2 (çèìà)
+"MemTest.MemcmpDiff" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/26 Testing: MemTest.MemcpyBasic
+5/26 Test: MemTest.MemcpyBasic
+Command: "C:/Lobovikov/Programming/labs/fundalg/lab2/build/tests.exe" "--gtest_filter=MemTest.MemcpyBasic" "--gtest_also_run_disabled_tests"
+Directory: C:/Lobovikov/Programming/labs/fundalg/lab2/build
+"MemTest.MemcpyBasic" start time: Oct 24 19:16 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Note: Google Test filter = MemTest.MemcpyBasic
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from MemTest
+[ RUN      ] MemTest.MemcpyBasic
+[       OK ] MemTest.MemcpyBasic (0 ms)
+[----------] 1 test from MemTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"MemTest.MemcpyBasic" end time: Oct 24 19:16 RTZ 2 (çèìà)
+"MemTest.MemcpyBasic" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/26 Testing: MemTest.MemsetBasic
+6/26 Test: MemTest.MemsetBasic
+Command: "C:/Lobovikov/Programming/labs/fundalg/lab2/build/tests.exe" "--gtest_filter=MemTest.MemsetBasic" "--gtest_also_run_disabled_tests"
+Directory: C:/Lobovikov/Programming/labs/fundalg/lab2/build
+"MemTest.MemsetBasic" start time: Oct 24 19:16 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Note: Google Test filter = MemTest.MemsetBasic
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from MemTest
+[ RUN      ] MemTest.MemsetBasic
+[       OK ] MemTest.MemsetBasic (0 ms)
+[----------] 1 test from MemTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"MemTest.MemsetBasic" end time: Oct 24 19:16 RTZ 2 (çèìà)
+"MemTest.MemsetBasic" time elapsed: 00:00:00
+----------------------------------------------------------
+
+7/26 Testing: StrTest.StrncatBasic
+7/26 Test: StrTest.StrncatBasic
+Command: "C:/Lobovikov/Programming/labs/fundalg/lab2/build/tests.exe" "--gtest_filter=StrTest.StrncatBasic" "--gtest_also_run_disabled_tests"
+Directory: C:/Lobovikov/Programming/labs/fundalg/lab2/build
+"StrTest.StrncatBasic" start time: Oct 24 19:16 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Note: Google Test filter = StrTest.StrncatBasic
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from StrTest
+[ RUN      ] StrTest.StrncatBasic
+[       OK ] StrTest.StrncatBasic (0 ms)
+[----------] 1 test from StrTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"StrTest.StrncatBasic" end time: Oct 24 19:16 RTZ 2 (çèìà)
+"StrTest.StrncatBasic" time elapsed: 00:00:00
+----------------------------------------------------------
+
+8/26 Testing: StrTest.StrchrBasic
+8/26 Test: StrTest.StrchrBasic
+Command: "C:/Lobovikov/Programming/labs/fundalg/lab2/build/tests.exe" "--gtest_filter=StrTest.StrchrBasic" "--gtest_also_run_disabled_tests"
+Directory: C:/Lobovikov/Programming/labs/fundalg/lab2/build
+"StrTest.StrchrBasic" start time: Oct 24 19:16 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Note: Google Test filter = StrTest.StrchrBasic
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from StrTest
+[ RUN      ] StrTest.StrchrBasic
+[       OK ] StrTest.StrchrBasic (0 ms)
+[----------] 1 test from StrTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"StrTest.StrchrBasic" end time: Oct 24 19:16 RTZ 2 (çèìà)
+"StrTest.StrchrBasic" time elapsed: 00:00:00
+----------------------------------------------------------
+
+9/26 Testing: StrTest.StrchrNotFound
+9/26 Test: StrTest.StrchrNotFound
+Command: "C:/Lobovikov/Programming/labs/fundalg/lab2/build/tests.exe" "--gtest_filter=StrTest.StrchrNotFound" "--gtest_also_run_disabled_tests"
+Directory: C:/Lobovikov/Programming/labs/fundalg/lab2/build
+"StrTest.StrchrNotFound" start time: Oct 24 19:16 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Note: Google Test filter = StrTest.StrchrNotFound
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from StrTest
+[ RUN      ] StrTest.StrchrNotFound
+[       OK ] StrTest.StrchrNotFound (0 ms)
+[----------] 1 test from StrTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"StrTest.StrchrNotFound" end time: Oct 24 19:16 RTZ 2 (çèìà)
+"StrTest.StrchrNotFound" time elapsed: 00:00:00
+----------------------------------------------------------
+
+10/26 Testing: StrTest.StrncmpEqual
+10/26 Test: StrTest.StrncmpEqual
+Command: "C:/Lobovikov/Programming/labs/fundalg/lab2/build/tests.exe" "--gtest_filter=StrTest.StrncmpEqual" "--gtest_also_run_disabled_tests"
+Directory: C:/Lobovikov/Programming/labs/fundalg/lab2/build
+"StrTest.StrncmpEqual" start time: Oct 24 19:16 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Note: Google Test filter = StrTest.StrncmpEqual
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from StrTest
+[ RUN      ] StrTest.StrncmpEqual
+[       OK ] StrTest.StrncmpEqual (0 ms)
+[----------] 1 test from StrTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"StrTest.StrncmpEqual" end time: Oct 24 19:16 RTZ 2 (çèìà)
+"StrTest.StrncmpEqual" time elapsed: 00:00:00
+----------------------------------------------------------
+
+11/26 Testing: StrTest.StrncmpDiff
+11/26 Test: StrTest.StrncmpDiff
+Command: "C:/Lobovikov/Programming/labs/fundalg/lab2/build/tests.exe" "--gtest_filter=StrTest.StrncmpDiff" "--gtest_also_run_disabled_tests"
+Directory: C:/Lobovikov/Programming/labs/fundalg/lab2/build
+"StrTest.StrncmpDiff" start time: Oct 24 19:16 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Note: Google Test filter = StrTest.StrncmpDiff
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from StrTest
+[ RUN      ] StrTest.StrncmpDiff
+[       OK ] StrTest.StrncmpDiff (0 ms)
+[----------] 1 test from StrTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"StrTest.StrncmpDiff" end time: Oct 24 19:16 RTZ 2 (çèìà)
+"StrTest.StrncmpDiff" time elapsed: 00:00:00
+----------------------------------------------------------
+
+12/26 Testing: StrTest.StrncpyBasic
+12/26 Test: StrTest.StrncpyBasic
+Command: "C:/Lobovikov/Programming/labs/fundalg/lab2/build/tests.exe" "--gtest_filter=StrTest.StrncpyBasic" "--gtest_also_run_disabled_tests"
+Directory: C:/Lobovikov/Programming/labs/fundalg/lab2/build
+"StrTest.StrncpyBasic" start time: Oct 24 19:16 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Note: Google Test filter = StrTest.StrncpyBasic
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from StrTest
+[ RUN      ] StrTest.StrncpyBasic
+[       OK ] StrTest.StrncpyBasic (0 ms)
+[----------] 1 test from StrTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"StrTest.StrncpyBasic" end time: Oct 24 19:16 RTZ 2 (çèìà)
+"StrTest.StrncpyBasic" time elapsed: 00:00:00
+----------------------------------------------------------
+
+13/26 Testing: StrTest.StrcspnBasic
+13/26 Test: StrTest.StrcspnBasic
+Command: "C:/Lobovikov/Programming/labs/fundalg/lab2/build/tests.exe" "--gtest_filter=StrTest.StrcspnBasic" "--gtest_also_run_disabled_tests"
+Directory: C:/Lobovikov/Programming/labs/fundalg/lab2/build
+"StrTest.StrcspnBasic" start time: Oct 24 19:16 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Note: Google Test filter = StrTest.StrcspnBasic
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from StrTest
+[ RUN      ] StrTest.StrcspnBasic
+[       OK ] StrTest.StrcspnBasic (0 ms)
+[----------] 1 test from StrTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"StrTest.StrcspnBasic" end time: Oct 24 19:16 RTZ 2 (çèìà)
+"StrTest.StrcspnBasic" time elapsed: 00:00:00
+----------------------------------------------------------
+
+14/26 Testing: StrTest.StrcspnNoMatch
+14/26 Test: StrTest.StrcspnNoMatch
+Command: "C:/Lobovikov/Programming/labs/fundalg/lab2/build/tests.exe" "--gtest_filter=StrTest.StrcspnNoMatch" "--gtest_also_run_disabled_tests"
+Directory: C:/Lobovikov/Programming/labs/fundalg/lab2/build
+"StrTest.StrcspnNoMatch" start time: Oct 24 19:16 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Note: Google Test filter = StrTest.StrcspnNoMatch
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from StrTest
+[ RUN      ] StrTest.StrcspnNoMatch
+[       OK ] StrTest.StrcspnNoMatch (0 ms)
+[----------] 1 test from StrTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"StrTest.StrcspnNoMatch" end time: Oct 24 19:16 RTZ 2 (çèìà)
+"StrTest.StrcspnNoMatch" time elapsed: 00:00:00
+----------------------------------------------------------
+
+15/26 Testing: StrTest.StrerrorCommon
+15/26 Test: StrTest.StrerrorCommon
+Command: "C:/Lobovikov/Programming/labs/fundalg/lab2/build/tests.exe" "--gtest_filter=StrTest.StrerrorCommon" "--gtest_also_run_disabled_tests"
+Directory: C:/Lobovikov/Programming/labs/fundalg/lab2/build
+"StrTest.StrerrorCommon" start time: Oct 24 19:16 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Note: Google Test filter = StrTest.StrerrorCommon
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from StrTest
+[ RUN      ] StrTest.StrerrorCommon
+[       OK ] StrTest.StrerrorCommon (0 ms)
+[----------] 1 test from StrTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"StrTest.StrerrorCommon" end time: Oct 24 19:16 RTZ 2 (çèìà)
+"StrTest.StrerrorCommon" time elapsed: 00:00:00
+----------------------------------------------------------
+
+16/26 Testing: StrTest.StrerrorOutOfRange
+16/26 Test: StrTest.StrerrorOutOfRange
+Command: "C:/Lobovikov/Programming/labs/fundalg/lab2/build/tests.exe" "--gtest_filter=StrTest.StrerrorOutOfRange" "--gtest_also_run_disabled_tests"
+Directory: C:/Lobovikov/Programming/labs/fundalg/lab2/build
+"StrTest.StrerrorOutOfRange" start time: Oct 24 19:16 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Note: Google Test filter = StrTest.StrerrorOutOfRange
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from StrTest
+[ RUN      ] StrTest.StrerrorOutOfRange
+[       OK ] StrTest.StrerrorOutOfRange (0 ms)
+[----------] 1 test from StrTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"StrTest.StrerrorOutOfRange" end time: Oct 24 19:16 RTZ 2 (çèìà)
+"StrTest.StrerrorOutOfRange" time elapsed: 00:00:00
+----------------------------------------------------------
+
+17/26 Testing: StrTest.StrlenBasic
+17/26 Test: StrTest.StrlenBasic
+Command: "C:/Lobovikov/Programming/labs/fundalg/lab2/build/tests.exe" "--gtest_filter=StrTest.StrlenBasic" "--gtest_also_run_disabled_tests"
+Directory: C:/Lobovikov/Programming/labs/fundalg/lab2/build
+"StrTest.StrlenBasic" start time: Oct 24 19:16 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Note: Google Test filter = StrTest.StrlenBasic
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from StrTest
+[ RUN      ] StrTest.StrlenBasic
+[       OK ] StrTest.StrlenBasic (0 ms)
+[----------] 1 test from StrTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"StrTest.StrlenBasic" end time: Oct 24 19:16 RTZ 2 (çèìà)
+"StrTest.StrlenBasic" time elapsed: 00:00:00
+----------------------------------------------------------
+
+18/26 Testing: StrTest.StrlenEmpty
+18/26 Test: StrTest.StrlenEmpty
+Command: "C:/Lobovikov/Programming/labs/fundalg/lab2/build/tests.exe" "--gtest_filter=StrTest.StrlenEmpty" "--gtest_also_run_disabled_tests"
+Directory: C:/Lobovikov/Programming/labs/fundalg/lab2/build
+"StrTest.StrlenEmpty" start time: Oct 24 19:16 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Note: Google Test filter = StrTest.StrlenEmpty
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from StrTest
+[ RUN      ] StrTest.StrlenEmpty
+[       OK ] StrTest.StrlenEmpty (0 ms)
+[----------] 1 test from StrTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"StrTest.StrlenEmpty" end time: Oct 24 19:16 RTZ 2 (çèìà)
+"StrTest.StrlenEmpty" time elapsed: 00:00:00
+----------------------------------------------------------
+
+19/26 Testing: StrTest.StrpbrkBasic
+19/26 Test: StrTest.StrpbrkBasic
+Command: "C:/Lobovikov/Programming/labs/fundalg/lab2/build/tests.exe" "--gtest_filter=StrTest.StrpbrkBasic" "--gtest_also_run_disabled_tests"
+Directory: C:/Lobovikov/Programming/labs/fundalg/lab2/build
+"StrTest.StrpbrkBasic" start time: Oct 24 19:16 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Note: Google Test filter = StrTest.StrpbrkBasic
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from StrTest
+[ RUN      ] StrTest.StrpbrkBasic
+[       OK ] StrTest.StrpbrkBasic (0 ms)
+[----------] 1 test from StrTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"StrTest.StrpbrkBasic" end time: Oct 24 19:16 RTZ 2 (çèìà)
+"StrTest.StrpbrkBasic" time elapsed: 00:00:00
+----------------------------------------------------------
+
+20/26 Testing: StrTest.StrpbrkNotFound
+20/26 Test: StrTest.StrpbrkNotFound
+Command: "C:/Lobovikov/Programming/labs/fundalg/lab2/build/tests.exe" "--gtest_filter=StrTest.StrpbrkNotFound" "--gtest_also_run_disabled_tests"
+Directory: C:/Lobovikov/Programming/labs/fundalg/lab2/build
+"StrTest.StrpbrkNotFound" start time: Oct 24 19:16 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Note: Google Test filter = StrTest.StrpbrkNotFound
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from StrTest
+[ RUN      ] StrTest.StrpbrkNotFound
+[       OK ] StrTest.StrpbrkNotFound (0 ms)
+[----------] 1 test from StrTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"StrTest.StrpbrkNotFound" end time: Oct 24 19:16 RTZ 2 (çèìà)
+"StrTest.StrpbrkNotFound" time elapsed: 00:00:00
+----------------------------------------------------------
+
+21/26 Testing: StrTest.StrrchrBasic
+21/26 Test: StrTest.StrrchrBasic
+Command: "C:/Lobovikov/Programming/labs/fundalg/lab2/build/tests.exe" "--gtest_filter=StrTest.StrrchrBasic" "--gtest_also_run_disabled_tests"
+Directory: C:/Lobovikov/Programming/labs/fundalg/lab2/build
+"StrTest.StrrchrBasic" start time: Oct 24 19:16 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Note: Google Test filter = StrTest.StrrchrBasic
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from StrTest
+[ RUN      ] StrTest.StrrchrBasic
+[       OK ] StrTest.StrrchrBasic (0 ms)
+[----------] 1 test from StrTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"StrTest.StrrchrBasic" end time: Oct 24 19:16 RTZ 2 (çèìà)
+"StrTest.StrrchrBasic" time elapsed: 00:00:00
+----------------------------------------------------------
+
+22/26 Testing: StrTest.StrrchrNotFound
+22/26 Test: StrTest.StrrchrNotFound
+Command: "C:/Lobovikov/Programming/labs/fundalg/lab2/build/tests.exe" "--gtest_filter=StrTest.StrrchrNotFound" "--gtest_also_run_disabled_tests"
+Directory: C:/Lobovikov/Programming/labs/fundalg/lab2/build
+"StrTest.StrrchrNotFound" start time: Oct 24 19:16 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Note: Google Test filter = StrTest.StrrchrNotFound
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from StrTest
+[ RUN      ] StrTest.StrrchrNotFound
+[       OK ] StrTest.StrrchrNotFound (0 ms)
+[----------] 1 test from StrTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"StrTest.StrrchrNotFound" end time: Oct 24 19:16 RTZ 2 (çèìà)
+"StrTest.StrrchrNotFound" time elapsed: 00:00:00
+----------------------------------------------------------
+
+23/26 Testing: StrTest.StrstrBasic
+23/26 Test: StrTest.StrstrBasic
+Command: "C:/Lobovikov/Programming/labs/fundalg/lab2/build/tests.exe" "--gtest_filter=StrTest.StrstrBasic" "--gtest_also_run_disabled_tests"
+Directory: C:/Lobovikov/Programming/labs/fundalg/lab2/build
+"StrTest.StrstrBasic" start time: Oct 24 19:16 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Note: Google Test filter = StrTest.StrstrBasic
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from StrTest
+[ RUN      ] StrTest.StrstrBasic
+[       OK ] StrTest.StrstrBasic (0 ms)
+[----------] 1 test from StrTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"StrTest.StrstrBasic" end time: Oct 24 19:16 RTZ 2 (çèìà)
+"StrTest.StrstrBasic" time elapsed: 00:00:00
+----------------------------------------------------------
+
+24/26 Testing: StrTest.StrstrNotFound
+24/26 Test: StrTest.StrstrNotFound
+Command: "C:/Lobovikov/Programming/labs/fundalg/lab2/build/tests.exe" "--gtest_filter=StrTest.StrstrNotFound" "--gtest_also_run_disabled_tests"
+Directory: C:/Lobovikov/Programming/labs/fundalg/lab2/build
+"StrTest.StrstrNotFound" start time: Oct 24 19:16 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Note: Google Test filter = StrTest.StrstrNotFound
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from StrTest
+[ RUN      ] StrTest.StrstrNotFound
+[       OK ] StrTest.StrstrNotFound (0 ms)
+[----------] 1 test from StrTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"StrTest.StrstrNotFound" end time: Oct 24 19:16 RTZ 2 (çèìà)
+"StrTest.StrstrNotFound" time elapsed: 00:00:00
+----------------------------------------------------------
+
+25/26 Testing: StrTest.StrtokBasic
+25/26 Test: StrTest.StrtokBasic
+Command: "C:/Lobovikov/Programming/labs/fundalg/lab2/build/tests.exe" "--gtest_filter=StrTest.StrtokBasic" "--gtest_also_run_disabled_tests"
+Directory: C:/Lobovikov/Programming/labs/fundalg/lab2/build
+"StrTest.StrtokBasic" start time: Oct 24 19:16 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Note: Google Test filter = StrTest.StrtokBasic
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from StrTest
+[ RUN      ] StrTest.StrtokBasic
+[       OK ] StrTest.StrtokBasic (0 ms)
+[----------] 1 test from StrTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"StrTest.StrtokBasic" end time: Oct 24 19:16 RTZ 2 (çèìà)
+"StrTest.StrtokBasic" time elapsed: 00:00:00
+----------------------------------------------------------
+
+26/26 Testing: StatusTest.StatusMessages
+26/26 Test: StatusTest.StatusMessages
+Command: "C:/Lobovikov/Programming/labs/fundalg/lab2/build/tests.exe" "--gtest_filter=StatusTest.StatusMessages" "--gtest_also_run_disabled_tests"
+Directory: C:/Lobovikov/Programming/labs/fundalg/lab2/build
+"StatusTest.StatusMessages" start time: Oct 24 19:16 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Note: Google Test filter = StatusTest.StatusMessages
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from StatusTest
+[ RUN      ] StatusTest.StatusMessages
+[       OK ] StatusTest.StatusMessages (0 ms)
+[----------] 1 test from StatusTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"StatusTest.StatusMessages" end time: Oct 24 19:16 RTZ 2 (çèìà)
+"StatusTest.StatusMessages" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Oct 24 19:16 RTZ 2 (çèìà)
