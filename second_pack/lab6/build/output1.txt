@@ -1,0 +1,3 @@
+Name: John Smith
+Group: CS101
+Average grade: 86.60
