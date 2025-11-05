@@ -1,0 +1,10 @@
+Test.BalancedSimple 1 0.009065
+Test.BalancedWithText 1 0.009112
+Test.BalancedAll 1 0.0084258
+Test.UnbalancedMissingClose 1 0.0100867
+Test.UnbalancedWrongOrder 1 0.0090106
+Test.UnbalancedMissingOpen 1 0.0085888
+Test.Empty 1 0.0092036
+Test.Text 1 0.0081691
+Test.InvalidArgument 1 0.0091684
+---
