@@ -1,0 +1,5 @@
+Short line first.
+This is a very long line that should be formatted to fit within 80 characters per line while maintaining word boundaries and ensuring proper text justification between words.
+Medium length line here.
+Another extremely long line that needs to be broken into multiple lines of exactly 80 characters or less where the last character of each line should be a letter not a space character.
+Final short line.

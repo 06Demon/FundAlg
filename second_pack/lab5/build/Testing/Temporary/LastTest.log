@@ -1,0 +1,138 @@
+Start testing: Nov 05 23:11 RTZ 2 (çèìà)
+----------------------------------------------------------
+1/5 Testing: File1.File1
+1/5 Test: File1.File1
+Command: "C:/Lobovikov/Programming/labs/fundalg/second_pack/lab5/build/tests.exe" "--gtest_filter=File1.File1" "--gtest_also_run_disabled_tests"
+Directory: C:/Lobovikov/Programming/labs/fundalg/second_pack/lab5/build
+"File1.File1" start time: Nov 05 23:11 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Running main() from C:\Lobovikov\Programming\labs\fundalg\second_pack\lab5\build\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = File1.File1
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from File1
+[ RUN      ] File1.File1
+[       OK ] File1.File1 (0 ms)
+[----------] 1 test from File1 (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"File1.File1" end time: Nov 05 23:11 RTZ 2 (çèìà)
+"File1.File1" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/5 Testing: File2.File2
+2/5 Test: File2.File2
+Command: "C:/Lobovikov/Programming/labs/fundalg/second_pack/lab5/build/tests.exe" "--gtest_filter=File2.File2" "--gtest_also_run_disabled_tests"
+Directory: C:/Lobovikov/Programming/labs/fundalg/second_pack/lab5/build
+"File2.File2" start time: Nov 05 23:11 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Running main() from C:\Lobovikov\Programming\labs\fundalg\second_pack\lab5\build\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = File2.File2
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from File2
+[ RUN      ] File2.File2
+[       OK ] File2.File2 (0 ms)
+[----------] 1 test from File2 (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"File2.File2" end time: Nov 05 23:11 RTZ 2 (çèìà)
+"File2.File2" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/5 Testing: File3.File3
+3/5 Test: File3.File3
+Command: "C:/Lobovikov/Programming/labs/fundalg/second_pack/lab5/build/tests.exe" "--gtest_filter=File3.File3" "--gtest_also_run_disabled_tests"
+Directory: C:/Lobovikov/Programming/labs/fundalg/second_pack/lab5/build
+"File3.File3" start time: Nov 05 23:11 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Running main() from C:\Lobovikov\Programming\labs\fundalg\second_pack\lab5\build\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = File3.File3
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from File3
+[ RUN      ] File3.File3
+[       OK ] File3.File3 (0 ms)
+[----------] 1 test from File3 (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"File3.File3" end time: Nov 05 23:11 RTZ 2 (çèìà)
+"File3.File3" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/5 Testing: File4.LargeWord
+4/5 Test: File4.LargeWord
+Command: "C:/Lobovikov/Programming/labs/fundalg/second_pack/lab5/build/tests.exe" "--gtest_filter=File4.LargeWord" "--gtest_also_run_disabled_tests"
+Directory: C:/Lobovikov/Programming/labs/fundalg/second_pack/lab5/build
+"File4.LargeWord" start time: Nov 05 23:11 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Running main() from C:\Lobovikov\Programming\labs\fundalg\second_pack\lab5\build\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = File4.LargeWord
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from File4
+[ RUN      ] File4.LargeWord
+[       OK ] File4.LargeWord (18 ms)
+[----------] 1 test from File4 (18 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (18 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"File4.LargeWord" end time: Nov 05 23:11 RTZ 2 (çèìà)
+"File4.LargeWord" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/5 Testing: File5.Word80symbols
+5/5 Test: File5.Word80symbols
+Command: "C:/Lobovikov/Programming/labs/fundalg/second_pack/lab5/build/tests.exe" "--gtest_filter=File5.Word80symbols" "--gtest_also_run_disabled_tests"
+Directory: C:/Lobovikov/Programming/labs/fundalg/second_pack/lab5/build
+"File5.Word80symbols" start time: Nov 05 23:11 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Running main() from C:\Lobovikov\Programming\labs\fundalg\second_pack\lab5\build\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = File5.Word80symbols
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from File5
+[ RUN      ] File5.Word80symbols
+[       OK ] File5.Word80symbols (0 ms)
+[----------] 1 test from File5 (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"File5.Word80symbols" end time: Nov 05 23:11 RTZ 2 (çèìà)
+"File5.Word80symbols" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Nov 05 23:11 RTZ 2 (çèìà)

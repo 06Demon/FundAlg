@@ -1,0 +1,6 @@
+File1.File1 5 0.0023768
+File2.File2 5 0.00193604
+File3.File3 5 0.00201584
+File4.LargeWord 5 0.005597
+File5.Word80symbols 5 0.00188226
+---

@@ -9,52 +9,76 @@
 #define MAX_LINE_LEN 1024
 #define TARGET_WIDTH 80
 
-static StatusCode validate_string(const char* str) {
-    if (str == NULL) {
-        return ERROR_NULL_POINTER;
-    }
-    return SUCCESS;
-}
-
-static FILE *open_file(const char *path, const char *mode) {
-    if (path == NULL || mode == NULL) {
-        return NULL;
-    }
-    FILE *f = fopen(path, mode);
-    return f;
-}
 
 static char *format_line(const char *line) {
     if (!line) return NULL;
-
+    
+    int cnt = 0;
     size_t len = strlen(line);
+    size_t start = 0;
+    while (start < len && isspace((unsigned char)line[start])) start++;
+    
+    size_t end = len;
+    while (end > start && isspace((unsigned char)line[end - 1])) end--;
+    
+    if (start >= end) {
+        char *result = malloc(2);
+        if (!result) return NULL;
+        strcpy(result, "\n");
+        return result;
+    }
+    
+    if (end - start <= TARGET_WIDTH) {
+        char *result = malloc(end - start + 2);
+        if (!result) return NULL;
+        strncpy(result, line + start, end - start);
+        result[end - start] = '\n';
+        result[end - start + 1] = '\0';
+        return result;
+    }
+
     char *result = (char *)calloc((len * 2) + 1, sizeof(char));
     if (!result) return NULL;
 
-    size_t start = 0;
     size_t pos = 0;
+    start = 0;
 
     while (start < len) {
-        size_t chunk_len = (len - start > TARGET_WIDTH) ? TARGET_WIDTH : len - start;
-        size_t end = start + chunk_len;
+        while (start < len && isspace((unsigned char)line[start])) start++;
+        if (start >= len) break;
 
-        if (end < len && !isspace((unsigned char)line[end]) && !isspace((unsigned char)line[end - 1])) {
-            while (end > start && !isspace((unsigned char)line[end - 1])) {
-                end--;
+        size_t chunk_len = (len - start > TARGET_WIDTH) ? TARGET_WIDTH : len - start;
+        size_t segment_end = start + chunk_len;
+
+        if (segment_end < len && !isspace((unsigned char)line[segment_end]) && 
+            !isspace((unsigned char)line[segment_end - 1])) {
+            while (segment_end > start && !isspace((unsigned char)line[segment_end - 1])) {
+                segment_end--;
+                cnt++;
             }
-            if (end == start) end = start + chunk_len;
+            if (segment_end == start) {
+                if (cnt >= 80) {return "___ERROR_LARGE_WORD___";}
+                else {segment_end = start + chunk_len;}
+            }
         }
 
-        size_t segment_len = end - start;
+        size_t segment_len = segment_end - start;
         char segment[MAX_LINE_LEN];
         strncpy(segment, line + start, segment_len);
         segment[segment_len] = '\0';
 
+        size_t seg_len = strlen(segment);
+        while (seg_len > 0 && isspace((unsigned char)segment[seg_len - 1])) {
+            segment[seg_len - 1] = '\0';
+            seg_len--;
+        }
+
         char *ptr = segment;
         while (*ptr && isspace((unsigned char)*ptr)) ptr++;
 
-        size_t slen = strlen(ptr);
-        if (slen < TARGET_WIDTH) {
+        size_t segment_trimmed_len = strlen(ptr);
+        
+        if (segment_trimmed_len < TARGET_WIDTH && strchr(ptr, ' ') != NULL) {
             char *words[256];
             int word_count = 0;
             char *token = strtok(ptr, " ");
@@ -77,18 +101,23 @@ static char *format_line(const char *line) {
                 for (int i = 0; i < word_count; i++) {
                     pos += sprintf(result + pos, "%s", words[i]);
                     if (i < word_count - 1) {
-                        for (size_t j = 0; j < space_between + ((size_t)i < extra ? 1 : 0); j++)
+                        for (size_t j = 0; j < space_between + ((size_t)i < extra ? 1 : 0); j++) {
                             result[pos++] = ' ';
+                        }
                     }
                 }
+                
+                while (pos > 0 && isspace((unsigned char)result[pos - 1])) {
+                    pos--;
+                }
+                
                 result[pos++] = '\n';
             }
         } else {
             pos += sprintf(result + pos, "%s\n", ptr);
         }
 
-        start = end;
-        while (isspace((unsigned char)line[start])) start++;
+        start = segment_end;
     }
 
     result[pos] = '\0';
@@ -102,24 +131,14 @@ static StatusCode write_line_to_file(FILE *out, const char *formatted_line) {
 }
 
 StatusCode process_file(const char *input_path, const char *output_path) {
-    StatusCode status = validate_string(input_path);
-    if (status != SUCCESS) {
-        return status;
-    }
-    
-    status = validate_string(output_path);
-    if (status != SUCCESS) {
-        return status;
+    if (input_path == NULL || output_path == NULL) {
+        return ERROR_NULL_POINTER;
     }
 
-    if (strcmp(input_path, output_path) == 0) {
-        return ERROR_INVALID_INPUT;
-    }
-
-    FILE *in = open_file(input_path, "r");
+    FILE *in = fopen(input_path, "r");
     if (!in) return ERROR_FILE_OPEN;
 
-    FILE *out = open_file(output_path, "w");
+    FILE *out = fopen(output_path, "w");
     if (!out) {
         fclose(in);
         return ERROR_FILE_OPEN;
@@ -129,12 +148,22 @@ StatusCode process_file(const char *input_path, const char *output_path) {
     while (fgets(buffer, sizeof(buffer), in)) {
         size_t len = strlen(buffer);
         if (len > 0 && buffer[len - 1] == '\n') buffer[len - 1] = '\0';
+        
+        while (len > 0 && isspace((unsigned char)buffer[len - 1])) {
+            buffer[len - 1] = '\0';
+            len--;
+        }
 
         char *formatted = format_line(buffer);
         if (!formatted) {
             fclose(in);
             fclose(out);
             return ERROR_MEMORY_ALLOCATION;
+        }
+        else if (strcmp(formatted, "___ERROR_LARGE_WORD___") == 0) {
+            fclose(in);
+            fclose(out);
+            return ERROR_LARGE_WORD;
         }
 
         StatusCode write_status = write_line_to_file(out, formatted);
@@ -147,14 +176,8 @@ StatusCode process_file(const char *input_path, const char *output_path) {
         }
     }
 
-    if (fclose(in) != 0) {
-        fclose(out);
-        return ERROR_FILE_READ;
-    }
-
-    if (fclose(out) != 0) {
-        return ERROR_FILE_WRITE;
-    }
-
+    fclose(in);
+    fclose(out);
+    
     return SUCCESS;
 }

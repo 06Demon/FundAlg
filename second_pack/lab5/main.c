@@ -8,7 +8,6 @@
 #endif
 
 #define MAX_PATH_LENGTH 256
-#define EPSILON 1e-9
 
 static void print_status_message(StatusCode status) {
     switch (status) {
@@ -21,17 +20,17 @@ static void print_status_message(StatusCode status) {
         case ERROR_FILE_OPEN:
             printf("Ошибка: Не удалось открыть файл.\n");
             break;
-        case ERROR_FILE_READ:
-            printf("Ошибка: Не удалось прочитать файл.\n");
-            break;
-        case ERROR_FILE_WRITE:
-            printf("Ошибка: Не удалось записать в файл.\n");
-            break;
         case ERROR_MEMORY_ALLOCATION:
             printf("Ошибка: Не удалось выделить память.\n");
             break;
         case ERROR_INVALID_INPUT:
-            printf("Ошибка: Некорректные входные данные.\n");
+            printf("Ошибка: Входной и выходной файл должны быть разными.\n");
+            break;
+        case ERROR_EMPTY_PATH:
+            printf("Ошибка: Пути к файлам не могут быть пустыми.\n");
+            break;
+        case ERROR_LARGE_WORD:
+            printf("Ошибка: Во входном файле было встречено слово больше 80 символов.\n");
             break;
         default:
             printf("Ошибка: Произошла неизвестная ошибка.\n");
@@ -39,10 +38,16 @@ static void print_status_message(StatusCode status) {
     }
 }
 
-static StatusCode validate_different_files(const char* input_path, const char* output_path) {
-    if (strcmp(input_path, output_path) == 0) {
+static StatusCode validate_file_paths(const char* input_path, const char* output_path) {
+    if (input_path == NULL || output_path == NULL) 
+        return ERROR_NULL_POINTER;
+    if (strlen(input_path) == 0 || strlen(output_path) == 0)
+        return ERROR_EMPTY_PATH;
+    if (strlen(input_path) >= MAX_PATH_LENGTH || strlen(output_path) >= MAX_PATH_LENGTH)
+        return BUFFER_OVERFLOW;
+    if (strcmp(input_path, output_path) == 0)
         return ERROR_INVALID_INPUT;
-    }
+
     return SUCCESS;
 }
 
@@ -56,7 +61,7 @@ int main() {
     printf("Введите путь к входному файлу: ");
     if (fgets(input_path, MAX_PATH_LENGTH, stdin) == NULL) {
         printf("Ошибка чтения пути входного файла.\n");
-        return EXIT_FAILURE;
+        return 1;
     }
     
     size_t input_len = strlen(input_path);
@@ -67,7 +72,7 @@ int main() {
     printf("Введите путь к выходному файлу: ");
     if (fgets(output_path, MAX_PATH_LENGTH, stdin) == NULL) {
         printf("Ошибка чтения пути выходного файла.\n");
-        return EXIT_FAILURE;
+        return 1;
     }
     
     size_t output_len = strlen(output_path);
@@ -75,24 +80,19 @@ int main() {
         output_path[output_len - 1] = '\0';
     }
     
-    if (strlen(input_path) == 0 || strlen(output_path) == 0) {
-        printf("Ошибка: Пути к файлам не могут быть пустыми.\n");
-        return EXIT_FAILURE;
-    }
-    
-    StatusCode validation_result = validate_different_files(input_path, output_path);
+    StatusCode validation_result = validate_file_paths(input_path, output_path);
     if (validation_result != SUCCESS) {
-        printf("Ошибка: Входной и выходной файл должны быть разными.\n");
-        return EXIT_FAILURE;
+        print_status_message(validation_result);
+        return 1;
     }
     
     StatusCode result = process_file(input_path, output_path);
     
     if (result != SUCCESS) {
         print_status_message(result);
-        return EXIT_FAILURE;
+        return 1;
     }
     
     printf("Обработка текста успешно завершена.\n");
-    return EXIT_SUCCESS;
+    return 0;
 }
