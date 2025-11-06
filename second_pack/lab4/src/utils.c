@@ -277,7 +277,7 @@ StatusCode my_overfscanf(FILE *stream, const char *format, ...) {
                 p += 2;
                 int *dest = va_arg(ap, int *);
                 int base = va_arg(ap, int);
-                if (base < 2 || base > 36) return INVALID_BASE;
+                if (base < 2 || base > 36) base = 10;
                 StatusCode status = parse_base_int_file(stream, dest, base, -1);
                 if (status != SUCCESS) { va_end(ap); return status; }
                 continue;
@@ -285,7 +285,7 @@ StatusCode my_overfscanf(FILE *stream, const char *format, ...) {
                 p += 2;
                 int *dest = va_arg(ap, int *);
                 int base = va_arg(ap, int);
-                if (base < 2 || base > 36) return INVALID_BASE;
+                if (base < 2 || base > 36) base = 10;
                 StatusCode status = parse_base_int_file(stream, dest, base, +1);
                 if (status != SUCCESS) { va_end(ap); return status; }
                 continue;
@@ -374,7 +374,7 @@ StatusCode my_oversscanf(const char *s, const char *format, ...) {
                 p += 2;
                 int *dest = va_arg(ap, int *);
                 int base = va_arg(ap, int);
-                if (base < 2 || base > 36) return INVALID_BASE;
+                if (base < 2 || base > 36) base = 10;
                 StatusCode status = parse_base_int_str(&sp, dest, base, -1);
                 if (status != SUCCESS) { va_end(ap); return status; }
                 continue;
@@ -382,7 +382,7 @@ StatusCode my_oversscanf(const char *s, const char *format, ...) {
                 p += 2;
                 int *dest = va_arg(ap, int *);
                 int base = va_arg(ap, int);
-                if (base < 2 || base > 36) return INVALID_BASE;
+                if (base < 2 || base > 36) base = 10;
                 StatusCode status = parse_base_int_str(&sp, dest, base, +1);
                 if (status != SUCCESS) { va_end(ap); return status; }
                 continue;
