@@ -1,0 +1,111 @@
+Start testing: Nov 06 21:13 RTZ 2 (çèìà)
+----------------------------------------------------------
+1/4 Testing: Oversscanf.Ro
+1/4 Test: Oversscanf.Ro
+Command: "C:/Lobovikov/Programming/labs/fundalg/second_pack/lab4/build/tests.exe" "--gtest_filter=Oversscanf.Ro" "--gtest_also_run_disabled_tests"
+Directory: C:/Lobovikov/Programming/labs/fundalg/second_pack/lab4/build
+"Oversscanf.Ro" start time: Nov 06 21:13 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Running main() from C:\Lobovikov\Programming\labs\fundalg\second_pack\lab4\build\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = Oversscanf.Ro
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Oversscanf
+[ RUN      ] Oversscanf.Ro
+[       OK ] Oversscanf.Ro (0 ms)
+[----------] 1 test from Oversscanf (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"Oversscanf.Ro" end time: Nov 06 21:13 RTZ 2 (çèìà)
+"Oversscanf.Ro" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/4 Testing: Oversscanf.Zr
+2/4 Test: Oversscanf.Zr
+Command: "C:/Lobovikov/Programming/labs/fundalg/second_pack/lab4/build/tests.exe" "--gtest_filter=Oversscanf.Zr" "--gtest_also_run_disabled_tests"
+Directory: C:/Lobovikov/Programming/labs/fundalg/second_pack/lab4/build
+"Oversscanf.Zr" start time: Nov 06 21:13 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Running main() from C:\Lobovikov\Programming\labs\fundalg\second_pack\lab4\build\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = Oversscanf.Zr
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Oversscanf
+[ RUN      ] Oversscanf.Zr
+[       OK ] Oversscanf.Zr (0 ms)
+[----------] 1 test from Oversscanf (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"Oversscanf.Zr" end time: Nov 06 21:13 RTZ 2 (çèìà)
+"Oversscanf.Zr" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/4 Testing: Oversscanf.Cv
+3/4 Test: Oversscanf.Cv
+Command: "C:/Lobovikov/Programming/labs/fundalg/second_pack/lab4/build/tests.exe" "--gtest_filter=Oversscanf.Cv" "--gtest_also_run_disabled_tests"
+Directory: C:/Lobovikov/Programming/labs/fundalg/second_pack/lab4/build
+"Oversscanf.Cv" start time: Nov 06 21:13 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Running main() from C:\Lobovikov\Programming\labs\fundalg\second_pack\lab4\build\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = Oversscanf.Cv
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Oversscanf
+[ RUN      ] Oversscanf.Cv
+[       OK ] Oversscanf.Cv (0 ms)
+[----------] 1 test from Oversscanf (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"Oversscanf.Cv" end time: Nov 06 21:13 RTZ 2 (çèìà)
+"Oversscanf.Cv" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/4 Testing: Overfscanf.ScanFile
+4/4 Test: Overfscanf.ScanFile
+Command: "C:/Lobovikov/Programming/labs/fundalg/second_pack/lab4/build/tests.exe" "--gtest_filter=Overfscanf.ScanFile" "--gtest_also_run_disabled_tests"
+Directory: C:/Lobovikov/Programming/labs/fundalg/second_pack/lab4/build
+"Overfscanf.ScanFile" start time: Nov 06 21:13 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Running main() from C:\Lobovikov\Programming\labs\fundalg\second_pack\lab4\build\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = Overfscanf.ScanFile
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Overfscanf
+[ RUN      ] Overfscanf.ScanFile
+[       OK ] Overfscanf.ScanFile (0 ms)
+[----------] 1 test from Overfscanf (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (1 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"Overfscanf.ScanFile" end time: Nov 06 21:13 RTZ 2 (çèìà)
+"Overfscanf.ScanFile" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Nov 06 21:13 RTZ 2 (çèìà)
