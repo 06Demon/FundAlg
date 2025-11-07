@@ -27,8 +27,8 @@ TEST(Oversscanf, Zr) {
     const char *s0 = "1";
     unsigned int out0 = 123;
     StatusCode r0 = my_oversscanf(s0, "%Zr", &out0);
-    EXPECT_EQ(r0, SUCCESS);
-    EXPECT_EQ(out0, 0);
+    EXPECT_EQ(r0, INVALID_ZECKENDORF);
+    EXPECT_EQ(out0, 123);
 
     const char *s1 = "1011";
     unsigned int out1 = 0;

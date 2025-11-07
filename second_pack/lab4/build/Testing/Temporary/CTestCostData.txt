@@ -1,5 +1,5 @@
-Oversscanf.Ro 6 0.00202743
-Oversscanf.Zr 5 0.0027211
-Oversscanf.Cv 6 0.00200717
-Overfscanf.ScanFile 6 0.00225148
+Oversscanf.Ro 5 0.0029865
+Oversscanf.Zr 2 0.0058612
+Oversscanf.Cv 5 0.00272888
+Overfscanf.ScanFile 5 0.00346296
 ---

@@ -1,10 +1,10 @@
-Start testing: Nov 06 21:13 RTZ 2 (çèìà)
+Start testing: Nov 07 17:17 RTZ 2 (çèìà)
 ----------------------------------------------------------
 1/4 Testing: Oversscanf.Ro
 1/4 Test: Oversscanf.Ro
 Command: "C:/Lobovikov/Programming/labs/fundalg/second_pack/lab4/build/tests.exe" "--gtest_filter=Oversscanf.Ro" "--gtest_also_run_disabled_tests"
 Directory: C:/Lobovikov/Programming/labs/fundalg/second_pack/lab4/build
-"Oversscanf.Ro" start time: Nov 06 21:13 RTZ 2 (çèìà)
+"Oversscanf.Ro" start time: Nov 07 17:17 RTZ 2 (çèìà)
 Output:
 ----------------------------------------------------------
 Running main() from C:\Lobovikov\Programming\labs\fundalg\second_pack\lab4\build\_deps\googletest-src\googletest\src\gtest_main.cc
@@ -23,7 +23,7 @@ Note: Google Test filter = Oversscanf.Ro
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"Oversscanf.Ro" end time: Nov 06 21:13 RTZ 2 (çèìà)
+"Oversscanf.Ro" end time: Nov 07 17:17 RTZ 2 (çèìà)
 "Oversscanf.Ro" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -31,7 +31,7 @@ Test Passed.
 2/4 Test: Oversscanf.Zr
 Command: "C:/Lobovikov/Programming/labs/fundalg/second_pack/lab4/build/tests.exe" "--gtest_filter=Oversscanf.Zr" "--gtest_also_run_disabled_tests"
 Directory: C:/Lobovikov/Programming/labs/fundalg/second_pack/lab4/build
-"Oversscanf.Zr" start time: Nov 06 21:13 RTZ 2 (çèìà)
+"Oversscanf.Zr" start time: Nov 07 17:17 RTZ 2 (çèìà)
 Output:
 ----------------------------------------------------------
 Running main() from C:\Lobovikov\Programming\labs\fundalg\second_pack\lab4\build\_deps\googletest-src\googletest\src\gtest_main.cc
@@ -50,7 +50,7 @@ Note: Google Test filter = Oversscanf.Zr
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"Oversscanf.Zr" end time: Nov 06 21:13 RTZ 2 (çèìà)
+"Oversscanf.Zr" end time: Nov 07 17:17 RTZ 2 (çèìà)
 "Oversscanf.Zr" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -58,7 +58,7 @@ Test Passed.
 3/4 Test: Oversscanf.Cv
 Command: "C:/Lobovikov/Programming/labs/fundalg/second_pack/lab4/build/tests.exe" "--gtest_filter=Oversscanf.Cv" "--gtest_also_run_disabled_tests"
 Directory: C:/Lobovikov/Programming/labs/fundalg/second_pack/lab4/build
-"Oversscanf.Cv" start time: Nov 06 21:13 RTZ 2 (çèìà)
+"Oversscanf.Cv" start time: Nov 07 17:17 RTZ 2 (çèìà)
 Output:
 ----------------------------------------------------------
 Running main() from C:\Lobovikov\Programming\labs\fundalg\second_pack\lab4\build\_deps\googletest-src\googletest\src\gtest_main.cc
@@ -77,7 +77,7 @@ Note: Google Test filter = Oversscanf.Cv
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"Oversscanf.Cv" end time: Nov 06 21:13 RTZ 2 (çèìà)
+"Oversscanf.Cv" end time: Nov 07 17:17 RTZ 2 (çèìà)
 "Oversscanf.Cv" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -85,7 +85,7 @@ Test Passed.
 4/4 Test: Overfscanf.ScanFile
 Command: "C:/Lobovikov/Programming/labs/fundalg/second_pack/lab4/build/tests.exe" "--gtest_filter=Overfscanf.ScanFile" "--gtest_also_run_disabled_tests"
 Directory: C:/Lobovikov/Programming/labs/fundalg/second_pack/lab4/build
-"Overfscanf.ScanFile" start time: Nov 06 21:13 RTZ 2 (çèìà)
+"Overfscanf.ScanFile" start time: Nov 07 17:17 RTZ 2 (çèìà)
 Output:
 ----------------------------------------------------------
 Running main() from C:\Lobovikov\Programming\labs\fundalg\second_pack\lab4\build\_deps\googletest-src\googletest\src\gtest_main.cc
@@ -95,17 +95,17 @@ Note: Google Test filter = Overfscanf.ScanFile
 [----------] 1 test from Overfscanf
 [ RUN      ] Overfscanf.ScanFile
 [       OK ] Overfscanf.ScanFile (0 ms)
-[----------] 1 test from Overfscanf (1 ms total)
+[----------] 1 test from Overfscanf (0 ms total)
 
 [----------] Global test environment tear-down
 [==========] 1 test from 1 test suite ran. (1 ms total)
 [  PASSED  ] 1 test.
 <end of output>
-Test time =   0.01 sec
+Test time =   0.02 sec
 ----------------------------------------------------------
 Test Passed.
-"Overfscanf.ScanFile" end time: Nov 06 21:13 RTZ 2 (çèìà)
+"Overfscanf.ScanFile" end time: Nov 07 17:17 RTZ 2 (çèìà)
 "Overfscanf.ScanFile" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Nov 06 21:13 RTZ 2 (çèìà)
+End testing: Nov 07 17:17 RTZ 2 (çèìà)

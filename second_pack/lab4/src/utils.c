@@ -108,6 +108,14 @@ static StatusCode parse_zeckendorf_file(FILE *f, unsigned int *out) {
     if (c != EOF) ungetc(c, f);
     if (idx == 0) return INVALID_ZECKENDORF;
     if (buf[idx-1] != '1') return INVALID_ZECKENDORF;
+    if (idx < 2) return INVALID_ZECKENDORF;
+
+    
+    for (size_t i = 0; i < idx - 2; i++) {
+        if (buf[i] == '1' && buf[i+1] == '1') {
+            return INVALID_ZECKENDORF;
+        }
+    }
     
     unsigned long long sum = 0;
     for (size_t i = 0; i + 1 < idx; ++i) {
@@ -137,6 +145,13 @@ static StatusCode parse_zeckendorf_str(const char **ps, unsigned int *out) {
     }
     if (idx == 0) return INVALID_ZECKENDORF;
     if (buf[idx-1] != '1') return INVALID_ZECKENDORF;
+    if (idx < 2) return INVALID_ZECKENDORF;
+
+    for (size_t i = 0; i < idx - 2; i++) {
+        if (buf[i] == '1' && buf[i+1] == '1') {
+            return INVALID_ZECKENDORF;
+        }
+    }
     
     unsigned long long sum = 0;
     for (size_t i = 0; i + 1 < idx; ++i) {
