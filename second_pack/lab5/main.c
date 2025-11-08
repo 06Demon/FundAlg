@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <limits.h>
 #include "include/utils.h"
 
 #ifdef _WIN32
@@ -39,14 +40,21 @@ static void print_status_message(StatusCode status) {
 }
 
 static StatusCode validate_file_paths(const char* input_path, const char* output_path) {
+    char real_input_path[MAX_PATH_LENGTH];
+    char real_output_path[MAX_PATH_LENGTH];
+
     if (input_path == NULL || output_path == NULL) 
         return ERROR_NULL_POINTER;
     if (strlen(input_path) == 0 || strlen(output_path) == 0)
         return ERROR_EMPTY_PATH;
     if (strlen(input_path) >= MAX_PATH_LENGTH || strlen(output_path) >= MAX_PATH_LENGTH)
         return BUFFER_OVERFLOW;
-    if (strcmp(input_path, output_path) == 0)
-        return ERROR_INVALID_INPUT;
+    if (_fullpath(real_input_path, input_path, MAX_PATH_LENGTH) && _fullpath(real_output_path, output_path, MAX_PATH_LENGTH))
+        {if (strcmp(real_input_path, real_output_path) == 0)
+            {return ERROR_INVALID_INPUT;}}
+    else
+        {if (strcmp(input_path, output_path) == 0)
+            {return ERROR_INVALID_INPUT;}}
 
     return SUCCESS;
 }
