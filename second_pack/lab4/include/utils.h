@@ -10,9 +10,10 @@ typedef enum {
     INVALID_ZECKENDORF,
     INVALID_BASE,
     INVALID_OTHER_CC_NUMBER,
+    SCAN_ERROR
 } StatusCode;
 
-StatusCode my_overfscanf(FILE *stream, const char *format, ...);
-StatusCode my_oversscanf(const char *s, const char *format, ...);
+StatusCode my_overfscanf(FILE *stream, int *ret, const char *format, ...);
+StatusCode my_oversscanf(const char *s, int *ret, const char *format, ...);
 
 #endif

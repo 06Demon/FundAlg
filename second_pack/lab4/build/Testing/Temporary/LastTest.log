@@ -1,10 +1,10 @@
-Start testing: Nov 07 17:17 RTZ 2 (çèìà)
+Start testing: Nov 08 20:43 RTZ 2 (çèìà)
 ----------------------------------------------------------
-1/4 Testing: Oversscanf.Ro
-1/4 Test: Oversscanf.Ro
+1/10 Testing: Oversscanf.Ro
+1/10 Test: Oversscanf.Ro
 Command: "C:/Lobovikov/Programming/labs/fundalg/second_pack/lab4/build/tests.exe" "--gtest_filter=Oversscanf.Ro" "--gtest_also_run_disabled_tests"
 Directory: C:/Lobovikov/Programming/labs/fundalg/second_pack/lab4/build
-"Oversscanf.Ro" start time: Nov 07 17:17 RTZ 2 (çèìà)
+"Oversscanf.Ro" start time: Nov 08 20:43 RTZ 2 (çèìà)
 Output:
 ----------------------------------------------------------
 Running main() from C:\Lobovikov\Programming\labs\fundalg\second_pack\lab4\build\_deps\googletest-src\googletest\src\gtest_main.cc
@@ -23,15 +23,15 @@ Note: Google Test filter = Oversscanf.Ro
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"Oversscanf.Ro" end time: Nov 07 17:17 RTZ 2 (çèìà)
+"Oversscanf.Ro" end time: Nov 08 20:43 RTZ 2 (çèìà)
 "Oversscanf.Ro" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-2/4 Testing: Oversscanf.Zr
-2/4 Test: Oversscanf.Zr
+2/10 Testing: Oversscanf.Zr
+2/10 Test: Oversscanf.Zr
 Command: "C:/Lobovikov/Programming/labs/fundalg/second_pack/lab4/build/tests.exe" "--gtest_filter=Oversscanf.Zr" "--gtest_also_run_disabled_tests"
 Directory: C:/Lobovikov/Programming/labs/fundalg/second_pack/lab4/build
-"Oversscanf.Zr" start time: Nov 07 17:17 RTZ 2 (çèìà)
+"Oversscanf.Zr" start time: Nov 08 20:43 RTZ 2 (çèìà)
 Output:
 ----------------------------------------------------------
 Running main() from C:\Lobovikov\Programming\labs\fundalg\second_pack\lab4\build\_deps\googletest-src\googletest\src\gtest_main.cc
@@ -50,15 +50,15 @@ Note: Google Test filter = Oversscanf.Zr
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"Oversscanf.Zr" end time: Nov 07 17:17 RTZ 2 (çèìà)
+"Oversscanf.Zr" end time: Nov 08 20:43 RTZ 2 (çèìà)
 "Oversscanf.Zr" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-3/4 Testing: Oversscanf.Cv
-3/4 Test: Oversscanf.Cv
+3/10 Testing: Oversscanf.Cv
+3/10 Test: Oversscanf.Cv
 Command: "C:/Lobovikov/Programming/labs/fundalg/second_pack/lab4/build/tests.exe" "--gtest_filter=Oversscanf.Cv" "--gtest_also_run_disabled_tests"
 Directory: C:/Lobovikov/Programming/labs/fundalg/second_pack/lab4/build
-"Oversscanf.Cv" start time: Nov 07 17:17 RTZ 2 (çèìà)
+"Oversscanf.Cv" start time: Nov 08 20:43 RTZ 2 (çèìà)
 Output:
 ----------------------------------------------------------
 Running main() from C:\Lobovikov\Programming\labs\fundalg\second_pack\lab4\build\_deps\googletest-src\googletest\src\gtest_main.cc
@@ -77,15 +77,15 @@ Note: Google Test filter = Oversscanf.Cv
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"Oversscanf.Cv" end time: Nov 07 17:17 RTZ 2 (çèìà)
+"Oversscanf.Cv" end time: Nov 08 20:43 RTZ 2 (çèìà)
 "Oversscanf.Cv" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-4/4 Testing: Overfscanf.ScanFile
-4/4 Test: Overfscanf.ScanFile
+4/10 Testing: Overfscanf.ScanFile
+4/10 Test: Overfscanf.ScanFile
 Command: "C:/Lobovikov/Programming/labs/fundalg/second_pack/lab4/build/tests.exe" "--gtest_filter=Overfscanf.ScanFile" "--gtest_also_run_disabled_tests"
 Directory: C:/Lobovikov/Programming/labs/fundalg/second_pack/lab4/build
-"Overfscanf.ScanFile" start time: Nov 07 17:17 RTZ 2 (çèìà)
+"Overfscanf.ScanFile" start time: Nov 08 20:43 RTZ 2 (çèìà)
 Output:
 ----------------------------------------------------------
 Running main() from C:\Lobovikov\Programming\labs\fundalg\second_pack\lab4\build\_deps\googletest-src\googletest\src\gtest_main.cc
@@ -98,14 +98,176 @@ Note: Google Test filter = Overfscanf.ScanFile
 [----------] 1 test from Overfscanf (0 ms total)
 
 [----------] Global test environment tear-down
-[==========] 1 test from 1 test suite ran. (1 ms total)
+[==========] 1 test from 1 test suite ran. (0 ms total)
 [  PASSED  ] 1 test.
 <end of output>
-Test time =   0.02 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"Overfscanf.ScanFile" end time: Nov 07 17:17 RTZ 2 (çèìà)
+"Overfscanf.ScanFile" end time: Nov 08 20:43 RTZ 2 (çèìà)
 "Overfscanf.ScanFile" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Nov 07 17:17 RTZ 2 (çèìà)
+5/10 Testing: Standard.Integer
+5/10 Test: Standard.Integer
+Command: "C:/Lobovikov/Programming/labs/fundalg/second_pack/lab4/build/tests.exe" "--gtest_filter=Standard.Integer" "--gtest_also_run_disabled_tests"
+Directory: C:/Lobovikov/Programming/labs/fundalg/second_pack/lab4/build
+"Standard.Integer" start time: Nov 08 20:43 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Running main() from C:\Lobovikov\Programming\labs\fundalg\second_pack\lab4\build\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = Standard.Integer
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Standard
+[ RUN      ] Standard.Integer
+[       OK ] Standard.Integer (0 ms)
+[----------] 1 test from Standard (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"Standard.Integer" end time: Nov 08 20:43 RTZ 2 (çèìà)
+"Standard.Integer" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/10 Testing: Standard.UnsignedInteger
+6/10 Test: Standard.UnsignedInteger
+Command: "C:/Lobovikov/Programming/labs/fundalg/second_pack/lab4/build/tests.exe" "--gtest_filter=Standard.UnsignedInteger" "--gtest_also_run_disabled_tests"
+Directory: C:/Lobovikov/Programming/labs/fundalg/second_pack/lab4/build
+"Standard.UnsignedInteger" start time: Nov 08 20:43 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Running main() from C:\Lobovikov\Programming\labs\fundalg\second_pack\lab4\build\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = Standard.UnsignedInteger
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Standard
+[ RUN      ] Standard.UnsignedInteger
+[       OK ] Standard.UnsignedInteger (0 ms)
+[----------] 1 test from Standard (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"Standard.UnsignedInteger" end time: Nov 08 20:43 RTZ 2 (çèìà)
+"Standard.UnsignedInteger" time elapsed: 00:00:00
+----------------------------------------------------------
+
+7/10 Testing: Standard.Character
+7/10 Test: Standard.Character
+Command: "C:/Lobovikov/Programming/labs/fundalg/second_pack/lab4/build/tests.exe" "--gtest_filter=Standard.Character" "--gtest_also_run_disabled_tests"
+Directory: C:/Lobovikov/Programming/labs/fundalg/second_pack/lab4/build
+"Standard.Character" start time: Nov 08 20:43 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Running main() from C:\Lobovikov\Programming\labs\fundalg\second_pack\lab4\build\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = Standard.Character
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Standard
+[ RUN      ] Standard.Character
+[       OK ] Standard.Character (0 ms)
+[----------] 1 test from Standard (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (1 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"Standard.Character" end time: Nov 08 20:43 RTZ 2 (çèìà)
+"Standard.Character" time elapsed: 00:00:00
+----------------------------------------------------------
+
+8/10 Testing: Standard.String
+8/10 Test: Standard.String
+Command: "C:/Lobovikov/Programming/labs/fundalg/second_pack/lab4/build/tests.exe" "--gtest_filter=Standard.String" "--gtest_also_run_disabled_tests"
+Directory: C:/Lobovikov/Programming/labs/fundalg/second_pack/lab4/build
+"Standard.String" start time: Nov 08 20:43 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Running main() from C:\Lobovikov\Programming\labs\fundalg\second_pack\lab4\build\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = Standard.String
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Standard
+[ RUN      ] Standard.String
+[       OK ] Standard.String (0 ms)
+[----------] 1 test from Standard (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"Standard.String" end time: Nov 08 20:43 RTZ 2 (çèìà)
+"Standard.String" time elapsed: 00:00:00
+----------------------------------------------------------
+
+9/10 Testing: Standard.Mixed
+9/10 Test: Standard.Mixed
+Command: "C:/Lobovikov/Programming/labs/fundalg/second_pack/lab4/build/tests.exe" "--gtest_filter=Standard.Mixed" "--gtest_also_run_disabled_tests"
+Directory: C:/Lobovikov/Programming/labs/fundalg/second_pack/lab4/build
+"Standard.Mixed" start time: Nov 08 20:43 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Running main() from C:\Lobovikov\Programming\labs\fundalg\second_pack\lab4\build\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = Standard.Mixed
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Standard
+[ RUN      ] Standard.Mixed
+[       OK ] Standard.Mixed (0 ms)
+[----------] 1 test from Standard (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"Standard.Mixed" end time: Nov 08 20:43 RTZ 2 (çèìà)
+"Standard.Mixed" time elapsed: 00:00:00
+----------------------------------------------------------
+
+10/10 Testing: Standard.Special
+10/10 Test: Standard.Special
+Command: "C:/Lobovikov/Programming/labs/fundalg/second_pack/lab4/build/tests.exe" "--gtest_filter=Standard.Special" "--gtest_also_run_disabled_tests"
+Directory: C:/Lobovikov/Programming/labs/fundalg/second_pack/lab4/build
+"Standard.Special" start time: Nov 08 20:43 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Running main() from C:\Lobovikov\Programming\labs\fundalg\second_pack\lab4\build\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = Standard.Special
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Standard
+[ RUN      ] Standard.Special
+[       OK ] Standard.Special (0 ms)
+[----------] 1 test from Standard (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"Standard.Special" end time: Nov 08 20:43 RTZ 2 (çèìà)
+"Standard.Special" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Nov 08 20:43 RTZ 2 (çèìà)

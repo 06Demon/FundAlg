@@ -1,5 +1,11 @@
-Oversscanf.Ro 5 0.0029865
-Oversscanf.Zr 2 0.0058612
-Oversscanf.Cv 5 0.00272888
-Overfscanf.ScanFile 5 0.00346296
+Oversscanf.Ro 1 0.0107568
+Oversscanf.Zr 1 0.0082582
+Oversscanf.Cv 1 0.0094762
+Overfscanf.ScanFile 1 0.0100779
+Standard.Integer 1 0.0086918
+Standard.UnsignedInteger 1 0.0106749
+Standard.Character 1 0.0111363
+Standard.String 1 0.0095806
+Standard.Mixed 1 0.0101863
+Standard.Special 1 0.010776
 ---

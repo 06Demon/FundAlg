@@ -265,13 +265,14 @@ static int match_char_str(const char **ps, char want) {
     return 0;
 }
 
-StatusCode my_overfscanf(FILE *stream, const char *format, ...) {
-    if (!stream || !format) return NULL_POINTER;
+StatusCode my_overfscanf(FILE *stream, int *ret, const char *format, ...) {
+    if (!stream || !format || !ret) return NULL_POINTER;
     
     va_list ap;
     va_start(ap, format);
     int assigned = 0;
     const char *p = format;
+    StatusCode final_status = SUCCESS;
     
     while (*p) {
         if (*p == '%') {
@@ -280,60 +281,95 @@ StatusCode my_overfscanf(FILE *stream, const char *format, ...) {
                 p += 2;
                 int *dest = va_arg(ap, int *);
                 StatusCode status = parse_roman_file(stream, dest);
-                if (status != SUCCESS) { va_end(ap); return status; }
+                if (status != SUCCESS) {
+                    final_status = status;
+                    break;
+                }
+                assigned++;
                 continue;
             } else if (p[0] == 'Z' && p[1] == 'r') {
                 p += 2;
                 unsigned int *dest = va_arg(ap, unsigned int *);
                 StatusCode status = parse_zeckendorf_file(stream, dest);
-                if (status != SUCCESS) { va_end(ap); return status; }
+                if (status != SUCCESS) {
+                    final_status = status;
+                    break;
+                }
+                assigned++;
                 continue;
             } else if (p[0] == 'C' && p[1] == 'v') {
                 p += 2;
                 int *dest = va_arg(ap, int *);
                 int base = va_arg(ap, int);
-                if (base < 2 || base > 36) base = 10;
                 StatusCode status = parse_base_int_file(stream, dest, base, -1);
-                if (status != SUCCESS) { va_end(ap); return status; }
+                if (status != SUCCESS) {
+                    final_status = status;
+                    break;
+                }
+                assigned++;
                 continue;
             } else if (p[0] == 'C' && p[1] == 'V') {
                 p += 2;
                 int *dest = va_arg(ap, int *);
                 int base = va_arg(ap, int);
-                if (base < 2 || base > 36) base = 10;
                 StatusCode status = parse_base_int_file(stream, dest, base, +1);
-                if (status != SUCCESS) { va_end(ap); return status; }
+                if (status != SUCCESS) {
+                    final_status = status;
+                    break;
+                }
+                assigned++;
                 continue;
-            } 
-            else {
+            } else {
                 char conv = *p;
                 if (conv == 'd') {
                     int *dest = va_arg(ap, int *);
-                    int ret = fscanf(stream, "%d", dest);
-                    if (ret != 1) { va_end(ap); return (assigned==0)? EOF : assigned; }
-                    ++assigned;
+                    int result = fscanf(stream, "%d", dest);
+                    if (result != 1) {
+                        final_status = (assigned == 0) ? SCAN_ERROR : SUCCESS;
+                        break;
+                    }
+                    assigned++;
                     ++p;
                     continue;
                 } else if (conv == 'u') {
                     unsigned int *dest = va_arg(ap, unsigned int *);
-                    int ret = fscanf(stream, "%u", dest);
-                    if (ret != 1) { va_end(ap); return (assigned==0)? EOF : assigned; }
-                    ++assigned;
+                    int result = fscanf(stream, "%u", dest);
+                    if (result != 1) {
+                        final_status = (assigned == 0) ? SCAN_ERROR : SUCCESS;
+                        break;
+                    }
+                    assigned++;
                     ++p;
                     continue;
                 } else if (conv == 'c') {
                     char *dest = va_arg(ap, char *);
                     int c = fgetc(stream);
-                    if (c == EOF) { va_end(ap); return (assigned==0)? EOF : assigned; }
+                    if (c == EOF) {
+                        final_status = (assigned == 0) ? SCAN_ERROR : SUCCESS;
+                        break;
+                    }
                     *dest = (char)c;
-                    ++assigned;
+                    assigned++;
                     ++p;
                     continue;
                 } else if (conv == 's') {
                     char *dest = va_arg(ap, char *);
-                    int ret = fscanf(stream, "%s", dest);
-                    if (ret != 1) { va_end(ap); return (assigned==0)? EOF : assigned; }
-                    ++assigned;
+                    int result = fscanf(stream, "%s", dest);
+                    if (result != 1) {
+                        final_status = (assigned == 0) ? SCAN_ERROR : SUCCESS;
+                        break;
+                    }
+                    assigned++;
+                    ++p;
+                    continue;
+                } else if (conv == 'f') {
+                    float *dest = va_arg(ap, float *);
+                    int result = fscanf(stream, "%f", dest);
+                    if (result != 1) {
+                        final_status = (assigned == 0) ? SCAN_ERROR : SUCCESS;
+                        break;
+                    }
+                    assigned++;
                     ++p;
                     continue;
                 } else if (isspace((unsigned char)conv)) {
@@ -343,7 +379,10 @@ StatusCode my_overfscanf(FILE *stream, const char *format, ...) {
                     ++p;
                     continue;
                 } else {
-                    if (!match_char_file(stream, conv)) { va_end(ap); return (assigned==0)? EOF : assigned; }
+                    if (!match_char_file(stream, conv)) {
+                        final_status = (assigned == 0) ? SCAN_ERROR : SUCCESS;
+                        break;
+                    }
                     ++p;
                     continue;
                 }
@@ -354,21 +393,33 @@ StatusCode my_overfscanf(FILE *stream, const char *format, ...) {
             if (c != EOF) ungetc(c, stream);
             ++p;
         } else {
-            if (!match_char_file(stream, *p)) { va_end(ap); return (assigned==0)? EOF : assigned; }
+            if (!match_char_file(stream, *p)) {
+                final_status = (assigned == 0) ? SCAN_ERROR : SUCCESS;
+                break;
+            }
             ++p;
         }
     }
+    
     va_end(ap);
-    return SUCCESS;
+    *ret = assigned;
+    
+    if (final_status == SCAN_ERROR && assigned > 0) {
+        return SUCCESS;
+    }
+    
+    return final_status;
 }
 
-StatusCode my_oversscanf(const char *s, const char *format, ...) {
-    if (!s || !format) return NULL_POINTER;
+StatusCode my_oversscanf(const char *s, int *ret, const char *format, ...) {
+    if (!s || !format || !ret) return NULL_POINTER;
     
     va_list ap;
     va_start(ap, format);
     const char *p = format;
     const char *sp = s;
+    int assigned = 0;
+    StatusCode final_status = SUCCESS;
     
     while (*p) {
         if (*p == '%') {
@@ -377,13 +428,21 @@ StatusCode my_oversscanf(const char *s, const char *format, ...) {
                 p += 2;
                 int *dest = va_arg(ap, int *);
                 StatusCode status = parse_roman_str(&sp, dest);
-                if (status != SUCCESS) { va_end(ap); return status; }
+                if (status != SUCCESS) {
+                    final_status = status;
+                    break;
+                }
+                assigned++;
                 continue;
             } else if (p[0] == 'Z' && p[1] == 'r') {
                 p += 2;
                 unsigned int *dest = va_arg(ap, unsigned int *);
                 StatusCode status = parse_zeckendorf_str(&sp, dest);
-                if (status != SUCCESS) { va_end(ap); return status; }
+                if (status != SUCCESS) {
+                    final_status = status;
+                    break;
+                }
+                assigned++;
                 continue;
             } else if (p[0] == 'C' && p[1] == 'v') {
                 p += 2;
@@ -391,7 +450,11 @@ StatusCode my_oversscanf(const char *s, const char *format, ...) {
                 int base = va_arg(ap, int);
                 if (base < 2 || base > 36) base = 10;
                 StatusCode status = parse_base_int_str(&sp, dest, base, -1);
-                if (status != SUCCESS) { va_end(ap); return status; }
+                if (status != SUCCESS) {
+                    final_status = status;
+                    break;
+                }
+                assigned++;
                 continue;
             } else if (p[0] == 'C' && p[1] == 'V') {
                 p += 2;
@@ -399,38 +462,70 @@ StatusCode my_oversscanf(const char *s, const char *format, ...) {
                 int base = va_arg(ap, int);
                 if (base < 2 || base > 36) base = 10;
                 StatusCode status = parse_base_int_str(&sp, dest, base, +1);
-                if (status != SUCCESS) { va_end(ap); return status; }
+                if (status != SUCCESS) {
+                    final_status = status;
+                    break;
+                }
+                assigned++;
                 continue;
             } else {
                 char conv = *p;
                 if (conv == 'd') {
                     int *dest = va_arg(ap, int *);
                     int consumed;
-                    int ret = sscanf(sp, "%d%n", dest, &consumed);
-                    if (ret != 1) { va_end(ap); return NULL_POINTER; }
+                    int result = sscanf(sp, "%d%n", dest, &consumed);
+                    if (result != 1) {
+                        final_status = SCAN_ERROR;
+                        break;
+                    }
                     sp += consumed;
+                    assigned++;
                     ++p;
                     continue;
                 } else if (conv == 'u') {
                     unsigned int *dest = va_arg(ap, unsigned int *);
                     int consumed;
-                    int ret = sscanf(sp, "%u%n", dest, &consumed);
-                    if (ret != 1) { va_end(ap); return NULL_POINTER; }
+                    int result = sscanf(sp, "%u%n", dest, &consumed);
+                    if (result != 1) {
+                        final_status = SCAN_ERROR;
+                        break;
+                    }
                     sp += consumed;
+                    assigned++;
                     ++p;
                     continue;
                 } else if (conv == 'c') {
                     char *dest = va_arg(ap, char *);
-                    if (*sp == '\0') { va_end(ap); return NULL_POINTER; }
+                    if (*sp == '\0') {
+                        final_status = SCAN_ERROR;
+                        break;
+                    }
                     *dest = *sp++;
+                    assigned++;
                     ++p;
                     continue;
                 } else if (conv == 's') {
                     char *dest = va_arg(ap, char *);
                     int consumed;
-                    int ret = sscanf(sp, "%s%n", dest, &consumed);
-                    if (ret != 1) { va_end(ap); return NULL_POINTER; }
+                    int result = sscanf(sp, "%s%n", dest, &consumed);
+                    if (result != 1) {
+                        final_status = SCAN_ERROR;
+                        break;
+                    }
                     sp += consumed;
+                    assigned++;
+                    ++p;
+                    continue;
+                } else if (conv == 'f') {
+                    float *dest = va_arg(ap, float *);
+                    int consumed;
+                    int result = sscanf(sp, "%f%n", dest, &consumed);
+                    if (result != 1) {
+                        final_status = SCAN_ERROR;
+                        break;
+                    }
+                    sp += consumed;
+                    assigned++;
                     ++p;
                     continue;
                 } else if (isspace((unsigned char)conv)) {
@@ -438,7 +533,10 @@ StatusCode my_oversscanf(const char *s, const char *format, ...) {
                     ++p;
                     continue;
                 } else {
-                    if (!match_char_str(&sp, conv)) { va_end(ap); return NULL_POINTER; }
+                    if (!match_char_str(&sp, conv)) {
+                        final_status = SCAN_ERROR;
+                        break;
+                    }
                     ++p;
                     continue;
                 }
@@ -447,10 +545,20 @@ StatusCode my_oversscanf(const char *s, const char *format, ...) {
             while (*sp && isspace((unsigned char)*sp)) ++sp;
             ++p;
         } else {
-            if (!match_char_str(&sp, *p)) { va_end(ap); return NULL_POINTER; }
+            if (!match_char_str(&sp, *p)) {
+                final_status = SCAN_ERROR;
+                break;
+            }
             ++p;
         }
     }
+    
     va_end(ap);
-    return SUCCESS;
+    *ret = assigned;
+    
+    if (final_status == SCAN_ERROR && assigned > 0) {
+        return SUCCESS;
+    }
+    
+    return final_status;
 }

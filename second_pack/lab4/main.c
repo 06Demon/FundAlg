@@ -24,28 +24,28 @@ static void print_menu(void) {
     printf("Ваш выбор: ");
 }
 
-static void handler_of_status(StatusCode status){
+static void handler_of_status(StatusCode status, int count){
     switch (status) {
         case SUCCESS:
-            printf("Операция успешно завершена.\n");
+            printf("Операция успешно завершена.\nСчитано %d полей\n", count);
             break;
         case NULL_POINTER:
-            printf("Ошибка: Обнаружен нулевой указатель.\n");
+            printf("Ошибка: Обнаружен нулевой указатель.\nСчитано %d полей\n", count);
             break;
         case INVALID_BASE:
-            printf("Ошибка: Не верное основание СС.\n");
+            printf("Ошибка: Не верное основание СС.\nСчитано %d полей\n", count);
             break;
         case INVALID_ZECKENDORF:
-            printf("Ошибка: Не верно передано цекендорфово число. На конце обязательно должна быть дополнительная единица.\n");
+            printf("Ошибка: Не верно передано цекендорфово число. На конце обязательно должна быть дополнительная единица.\nСчитано %d полей\n", count);
             break;
         case INVALID_ROMAN:
-            printf("Ошибка: Не верно передано римское число.\n");
+            printf("Ошибка: Не верно передано римское число.\nСчитано %d полей\n", count);
             break;
         case INVALID_OTHER_CC_NUMBER:
-            printf("Ошибка: Не верно передано число в другой системе счисления.\n");
+            printf("Ошибка: Не верно передано число в другой системе счисления.\nСчитано %d полей\n", count);
             break;
         default:
-            printf("Ошибка: Произошла неизвестная ошибка.\n");
+            printf("Ошибка: Произошла неизвестная ошибка.\nСчитано %d полей\n", count);
             break;
     }
 }
@@ -56,11 +56,12 @@ static void test_Ro(void) {
     if (!fgets(input, sizeof(input), stdin)) return;
     input[strcspn(input, "\n")] = 0;
     int value = 0;
-    StatusCode status = my_oversscanf(input, "%Ro", &value);
+    int count = 0;
+    StatusCode status = my_oversscanf(input, &count, "%Ro", &value);
     if (status == SUCCESS)
         printf("Считано успешно! Значение = %d\n", value);
     else 
-        handler_of_status(status);
+        handler_of_status(status, count);
 }
 
 static void test_Zr(void) {
@@ -69,11 +70,12 @@ static void test_Zr(void) {
     if (!fgets(input, sizeof(input), stdin)) return;
     input[strcspn(input, "\n")] = 0;
     unsigned int value = 0;
-    StatusCode status = my_oversscanf(input, "%Zr", &value);
+    int count = 0;
+    StatusCode status = my_oversscanf(input, &count, "%Zr", &value);
     if (status == SUCCESS)
         printf("Считано успешно! Значение = %d\n", value);
     else 
-        handler_of_status(status);
+        handler_of_status(status, count);
 }
 
 static void test_Cv(void) {
@@ -86,11 +88,13 @@ static void test_Cv(void) {
     if (scanf("%d", &base) != 1) { clear_stdin(); return; }
     clear_stdin();
     int value = 0;
-    StatusCode status = my_oversscanf(input, "%Cv", &value, base);
+    int count = 0;
+    if (base < 2 || base > 36) base = 10;
+    StatusCode status = my_oversscanf(input, &count, "%Cv", &value);
     if (status == SUCCESS)
-        printf("Считано успешно! Значение = %d (основание %d)\n", value, base);
+        printf("Считано успешно! Значение = %d\n", value);
     else 
-        handler_of_status(status);
+        handler_of_status(status, count);
 }
 
 static void test_CV(void) {
@@ -103,11 +107,13 @@ static void test_CV(void) {
     if (scanf("%d", &base) != 1) { clear_stdin(); return; }
     clear_stdin();
     int value = 0;
-    StatusCode status = my_oversscanf(input, "%CV", &value, base);
+    int count = 0;
+    if (base < 2 || base > 36) base = 10;
+    StatusCode status = my_oversscanf(input, &count, "%CV", &value);
     if (status == SUCCESS)
-        printf("Считано успешно! Значение = %d (основание %d)\n", value, base);
+        printf("Считано успешно! Значение = %d\n", value);
     else 
-        handler_of_status(status);
+        handler_of_status(status, count);
 }
 
 static void test_file(void) {
@@ -133,17 +139,18 @@ static void test_file(void) {
     clear_stdin();
 
     printf("\nПопытка чтения из файла формата: %%Ro %%Zr %%Cv %%CV\n");
-    StatusCode status = my_overfscanf(f, "%Ro %Zr %Cv %CV", &roman, &zeck, &valCv, base, &valCV, base);
+    int count = 0;
+    StatusCode status = my_overfscanf(f, &count, "%Ro %Zr %Cv %CV", &roman, &zeck, &valCv, base, &valCV, base);
     fclose(f);
 
     if (status == SUCCESS) {
-        printf("\nРезультаты чтения:\n");
+        printf("\nРезультаты чтения (%d полей успешно):\n", count);
         printf(" Римское число: %d\n", roman);
         printf(" Цекендорфово представление: %u\n", zeck);
         printf(" Cv (нижний регистр): %d\n", valCv);
         printf(" CV (верхний регистр): %d\n", valCV);
     } else {
-        handler_of_status(status);
+        handler_of_status(status, count);
     }
 }
 
