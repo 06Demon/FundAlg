@@ -1,0 +1,219 @@
+Start testing: Nov 19 10:29 RTZ 2 (çèìà)
+----------------------------------------------------------
+1/8 Testing: Tests.Zero
+1/8 Test: Tests.Zero
+Command: "C:/Lobovikov/Programming/labs/fundalg/third_pack/lab1/build/tests.exe" "--gtest_filter=Tests.Zero" "--gtest_also_run_disabled_tests"
+Directory: C:/Lobovikov/Programming/labs/fundalg/third_pack/lab1/build
+"Tests.Zero" start time: Nov 19 10:29 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Running main() from C:\Lobovikov\Programming\labs\fundalg\third_pack\lab1\build\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = Tests.Zero
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Tests
+[ RUN      ] Tests.Zero
+[       OK ] Tests.Zero (0 ms)
+[----------] 1 test from Tests (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"Tests.Zero" end time: Nov 19 10:29 RTZ 2 (çèìà)
+"Tests.Zero" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/8 Testing: Tests.Base2
+2/8 Test: Tests.Base2
+Command: "C:/Lobovikov/Programming/labs/fundalg/third_pack/lab1/build/tests.exe" "--gtest_filter=Tests.Base2" "--gtest_also_run_disabled_tests"
+Directory: C:/Lobovikov/Programming/labs/fundalg/third_pack/lab1/build
+"Tests.Base2" start time: Nov 19 10:29 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Running main() from C:\Lobovikov\Programming\labs\fundalg\third_pack\lab1\build\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = Tests.Base2
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Tests
+[ RUN      ] Tests.Base2
+[       OK ] Tests.Base2 (0 ms)
+[----------] 1 test from Tests (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"Tests.Base2" end time: Nov 19 10:29 RTZ 2 (çèìà)
+"Tests.Base2" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/8 Testing: Tests.Base4
+3/8 Test: Tests.Base4
+Command: "C:/Lobovikov/Programming/labs/fundalg/third_pack/lab1/build/tests.exe" "--gtest_filter=Tests.Base4" "--gtest_also_run_disabled_tests"
+Directory: C:/Lobovikov/Programming/labs/fundalg/third_pack/lab1/build
+"Tests.Base4" start time: Nov 19 10:29 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Running main() from C:\Lobovikov\Programming\labs\fundalg\third_pack\lab1\build\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = Tests.Base4
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Tests
+[ RUN      ] Tests.Base4
+[       OK ] Tests.Base4 (0 ms)
+[----------] 1 test from Tests (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"Tests.Base4" end time: Nov 19 10:29 RTZ 2 (çèìà)
+"Tests.Base4" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/8 Testing: Tests.Base16
+4/8 Test: Tests.Base16
+Command: "C:/Lobovikov/Programming/labs/fundalg/third_pack/lab1/build/tests.exe" "--gtest_filter=Tests.Base16" "--gtest_also_run_disabled_tests"
+Directory: C:/Lobovikov/Programming/labs/fundalg/third_pack/lab1/build
+"Tests.Base16" start time: Nov 19 10:29 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Running main() from C:\Lobovikov\Programming\labs\fundalg\third_pack\lab1\build\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = Tests.Base16
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Tests
+[ RUN      ] Tests.Base16
+[       OK ] Tests.Base16 (0 ms)
+[----------] 1 test from Tests (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"Tests.Base16" end time: Nov 19 10:29 RTZ 2 (çèìà)
+"Tests.Base16" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/8 Testing: Tests.Base32
+5/8 Test: Tests.Base32
+Command: "C:/Lobovikov/Programming/labs/fundalg/third_pack/lab1/build/tests.exe" "--gtest_filter=Tests.Base32" "--gtest_also_run_disabled_tests"
+Directory: C:/Lobovikov/Programming/labs/fundalg/third_pack/lab1/build
+"Tests.Base32" start time: Nov 19 10:29 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Running main() from C:\Lobovikov\Programming\labs\fundalg\third_pack\lab1\build\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = Tests.Base32
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Tests
+[ RUN      ] Tests.Base32
+[       OK ] Tests.Base32 (0 ms)
+[----------] 1 test from Tests (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"Tests.Base32" end time: Nov 19 10:29 RTZ 2 (çèìà)
+"Tests.Base32" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/8 Testing: Tests.InvalidBase
+6/8 Test: Tests.InvalidBase
+Command: "C:/Lobovikov/Programming/labs/fundalg/third_pack/lab1/build/tests.exe" "--gtest_filter=Tests.InvalidBase" "--gtest_also_run_disabled_tests"
+Directory: C:/Lobovikov/Programming/labs/fundalg/third_pack/lab1/build
+"Tests.InvalidBase" start time: Nov 19 10:29 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Running main() from C:\Lobovikov\Programming\labs\fundalg\third_pack\lab1\build\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = Tests.InvalidBase
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Tests
+[ RUN      ] Tests.InvalidBase
+[       OK ] Tests.InvalidBase (0 ms)
+[----------] 1 test from Tests (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"Tests.InvalidBase" end time: Nov 19 10:29 RTZ 2 (çèìà)
+"Tests.InvalidBase" time elapsed: 00:00:00
+----------------------------------------------------------
+
+7/8 Testing: Tests.NegativeNumber
+7/8 Test: Tests.NegativeNumber
+Command: "C:/Lobovikov/Programming/labs/fundalg/third_pack/lab1/build/tests.exe" "--gtest_filter=Tests.NegativeNumber" "--gtest_also_run_disabled_tests"
+Directory: C:/Lobovikov/Programming/labs/fundalg/third_pack/lab1/build
+"Tests.NegativeNumber" start time: Nov 19 10:29 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Running main() from C:\Lobovikov\Programming\labs\fundalg\third_pack\lab1\build\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = Tests.NegativeNumber
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Tests
+[ RUN      ] Tests.NegativeNumber
+[       OK ] Tests.NegativeNumber (0 ms)
+[----------] 1 test from Tests (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"Tests.NegativeNumber" end time: Nov 19 10:29 RTZ 2 (çèìà)
+"Tests.NegativeNumber" time elapsed: 00:00:00
+----------------------------------------------------------
+
+8/8 Testing: Tests.MemoryAllocation
+8/8 Test: Tests.MemoryAllocation
+Command: "C:/Lobovikov/Programming/labs/fundalg/third_pack/lab1/build/tests.exe" "--gtest_filter=Tests.MemoryAllocation" "--gtest_also_run_disabled_tests"
+Directory: C:/Lobovikov/Programming/labs/fundalg/third_pack/lab1/build
+"Tests.MemoryAllocation" start time: Nov 19 10:29 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Running main() from C:\Lobovikov\Programming\labs\fundalg\third_pack\lab1\build\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = Tests.MemoryAllocation
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Tests
+[ RUN      ] Tests.MemoryAllocation
+[       OK ] Tests.MemoryAllocation (0 ms)
+[----------] 1 test from Tests (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"Tests.MemoryAllocation" end time: Nov 19 10:29 RTZ 2 (çèìà)
+"Tests.MemoryAllocation" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Nov 19 10:29 RTZ 2 (çèìà)

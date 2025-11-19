@@ -1,0 +1,16 @@
+DecimalToBase2rTest.ZeroTest 3 0.00555203
+DecimalToBase2rTest.Base2Test 3 0.00463627
+DecimalToBase2rTest.Base4Test 3 0.00479773
+DecimalToBase2rTest.Base16Test 3 0.0043223
+DecimalToBase2rTest.InvalidBase 3 0.0047318
+DecimalToBase2rTest.NegativeNumber 3 0.00489387
+DecimalToBase2rTest.MemoryAllocation 3 0.00475967
+Tests.Zero 2 0.00720475
+Tests.Base2 2 0.0087534
+Tests.Base4 2 0.00865175
+Tests.Base16 2 0.0083366
+Tests.Base32 2 0.0078501
+Tests.InvalidBase 2 0.0084819
+Tests.NegativeNumber 2 0.0081169
+Tests.MemoryAllocation 2 0.00778575
+---
